@@ -1,30 +1,36 @@
 <?php
 
-define('DB', 'database');
+/*$array = [ 0 => 'a', 1 => 'b', 2 => 'c', 3 => 'd'];
 
-echo constant('DB');
+$nb = count($array);
 
-$test = null;
-if (isset($test)) {
+echo $nb;
+
+if (in_array('a', $array)) {
     echo 'ok';
-} else {
-    echo 'ko';
 }
 
-$test = null;
-if (empty($test)) {
+if (in_array('e', $array)) {
     echo 'ok';
-} else {
-    echo 'ko';
 }
+**/
 
-$test = null;
-if (!empty($test)) {
-    echo 'ok';
-} else {
-    echo 'ko';
+/*echo array_search('d', $array);
+
+
+$array = ['d', 'c', 'a', 'b'];
+sort($array);
+
+foreach ($array as $key => $value) {
+    var_dump($value);
 }
-unset($test);
+**/
 
-var_dump($test);
-die();
+//var_dump(explode(',', 'a,b,c,d,e'));
+
+//var_dump(implode(',', ['d', 'c', 'a', 'b']));
+
+$array = [ 15, 2, 560, 42];
+
+echo min($array);
+echo max($array);
